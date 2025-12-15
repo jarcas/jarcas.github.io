@@ -1,6 +1,254 @@
-<html>
-<head></head>
-<body>
-1, 2, 3, 4, 5, 6, 7, 8
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A modern one-page landing with links to Javier Arcas' public GitHub repositories."
+    />
+    <title>Repositorio de Javier Arcas</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-mark" aria-hidden="true">JA</span>
+          <span class="brand-text">Javier Arcas</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#repositories">Repositories</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero" id="top">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Repositorio de Javier Arcas</h1>
+            <p class="lead">
+              A single-page landing that links to my public projects on GitHub.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button primary" href="#repositories">Browse repositories</a>
+              <a class="button ghost" href="https://github.com/jarcas" rel="me">
+                GitHub profile
+              </a>
+            </div>
+
+            <dl class="hero-stats" aria-label="Highlights">
+              <div>
+                <dt>Repositories</dt>
+                <dd>4</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>Python + Desktop tools</dd>
+              </div>
+              <div>
+                <dt>Updated</dt>
+                <dd>2025</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-card" role="note" aria-label="Quick note">
+            <p class="hero-card-title">Looking for the code?</p>
+            <p class="hero-card-text">
+              Each card below links directly to the repository, with a short
+              summary of what it is.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="repositories">
+        <div class="container">
+          <div class="section-header">
+            <h2>Repositories</h2>
+            <p>
+              A curated list of my public repositories (excluding this website
+              repository).
+            </p>
+          </div>
+
+          <div class="toolbar" role="search">
+            <label class="search">
+              <span class="sr-only">Filter repositories</span>
+              <input
+                id="repoFilter"
+                type="search"
+                inputmode="search"
+                placeholder="Filter by name or description…"
+                autocomplete="off"
+              />
+            </label>
+          </div>
+
+          <div class="grid" id="repoGrid">
+            <article class="card" data-repo>
+              <div class="card-top">
+                <h3>
+                  <a href="https://github.com/jarcas/fractals">fractals</a>
+                </h3>
+                <p class="card-desc">
+                  Two small desktop viewers written in Python + PyQt5.
+                </p>
+              </div>
+              <div class="card-meta">
+                <span class="pill">Python</span>
+                <span class="meta"
+                  >Updated
+                  <time datetime="2025-12-15T10:01:33Z">Dec 15, 2025</time></span
+                >
+              </div>
+              <div class="card-actions">
+                <a class="button small" href="https://github.com/jarcas/fractals"
+                  >View on GitHub</a
+                >
+              </div>
+            </article>
+
+            <article class="card" data-repo>
+              <div class="card-top">
+                <h3>
+                  <a href="https://github.com/jarcas/evo-life">evo-life</a>
+                </h3>
+                <p class="card-desc">
+                  A 2D artificial life simulation with evolving agents (Python +
+                  pygame).
+                </p>
+              </div>
+              <div class="card-meta">
+                <span class="pill">Python</span>
+                <span class="meta"
+                  >Updated
+                  <time datetime="2025-12-15T09:56:27Z">Dec 15, 2025</time></span
+                >
+              </div>
+              <div class="card-actions">
+                <a class="button small" href="https://github.com/jarcas/evo-life"
+                  >View on GitHub</a
+                >
+              </div>
+            </article>
+
+            <article class="card" data-repo>
+              <div class="card-top">
+                <h3>
+                  <a href="https://github.com/jarcas/systemd-gui-dashboard"
+                    >systemd-gui-dashboard</a
+                  >
+                </h3>
+                <p class="card-desc">
+                  PyQt6 desktop app to manage systemd services: list, filter,
+                  inspect status, and run privileged actions via pkexec.
+                </p>
+              </div>
+              <div class="card-meta">
+                <span class="pill">Python</span>
+                <span class="meta"
+                  >Updated
+                  <time datetime="2025-12-09T10:57:09Z">Dec 9, 2025</time></span
+                >
+              </div>
+              <div class="card-actions">
+                <a
+                  class="button small"
+                  href="https://github.com/jarcas/systemd-gui-dashboard"
+                  >View on GitHub</a
+                >
+              </div>
+            </article>
+
+            <article class="card" data-repo>
+              <div class="card-top">
+                <h3>
+                  <a href="https://github.com/jarcas/ai-final-degree"
+                    >ai-final-degree</a
+                  >
+                </h3>
+                <p class="card-desc">
+                  Jupyter notebook + data/results evaluating resampling
+                  strategies for class imbalance in intrusion detection.
+                </p>
+              </div>
+              <div class="card-meta">
+                <span class="pill">Jupyter Notebook</span>
+                <span class="meta"
+                  >Updated
+                  <time datetime="2025-12-09T11:25:46Z">Dec 9, 2025</time></span
+                >
+              </div>
+              <div class="card-actions">
+                <a
+                  class="button small"
+                  href="https://github.com/jarcas/ai-final-degree"
+                  >View on GitHub</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <p class="muted small-note" id="repoEmpty" hidden>
+            No repositories match your filter.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h2>About</h2>
+            <p>
+              This site is intentionally simple: one HTML file, one CSS file,
+              and a tiny script for filtering.
+            </p>
+          </div>
+
+          <div class="prose">
+            <p>
+              If you want me to tailor this page (bio, featured projects,
+              screenshots, a CV section, or a contact form), tell me what you
+              want to highlight and I’ll shape it accordingly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contact</h2>
+            <p>Find me online:</p>
+          </div>
+
+          <ul class="links">
+            <li>
+              <a href="https://github.com/jarcas" rel="me">github.com/jarcas</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">
+          © <span id="year">2025</span> Javier Arcas. Built with plain HTML/CSS.
+        </p>
+        <a class="muted" href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="assets/script.js" defer></script>
+  </body>
 </html>
